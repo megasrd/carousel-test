@@ -1,0 +1,156 @@
+.contents.left {
+    float: left;
+    position: relative;
+    top: 70px;
+    left: 50px;
+    
+}
+
+.contents.right {
+     float: right;
+    position: relative;
+    top: 70px;
+    right: 50px;
+}
+
+.contents > h2 {
+    font-family: sans-serif;
+    font-size: 60px;
+}
+
+.contents > p {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.contents > button {
+
+    border: none;
+    background: black;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+    
+}
+
+#slide-1 {
+    background-image: url(images/image_1.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+#slide-2 {
+    background-image: url(images/image_2.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+#slide-3 {
+    background-image: url(images/image_3.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#slide-4 {
+    background-image: url(images/image_4.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+#slide-5 {
+    background-image: url(images/image_5.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+
+.arrow_keys {
+    width: 100%;
+    position: relative;
+    bottom: 310px
+}
+
+.arrow_keys > .arrow {
+    padding: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrow_keys > .left {
+    float: left;
+    background-image: url(images/left-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.arrow_keys > .right {
+    float: right;
+    background-image: url(images/right-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#nav_nodes {
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-node {
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all ease 0.2s;
+}
+
+
+.current-node {
+    opacity: 1;
+    padding: 7px;
+}
+
+
+.slider {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.slide {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    background: red;
+    display: none;
+}
+
+.first {
+    order: -1;
+    display: block !important;
+}
+
+.fade {
+    -webkit-animation-name : fade;
+    -webkit-animation-duration : 1s;
+    animation-name : fade;
+    animation-duration : 1s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity : 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity : 1}
+}
